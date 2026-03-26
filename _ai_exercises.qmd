@@ -1,0 +1,323 @@
+<!-- File: _level_1.qmd -->
+### Änderung der inneren Energie
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Innere Energie",
+    level = 1,
+    base_points = 7,
+    max_base_points = 7 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Gib die Definition der Änderung der inneren Energie an. Gleichung, Benennung der Variablen, Einheiten.    
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die Änderung der inneren Energie $\Delta U$ wird in $\mathrm{J}$ angegeben. Sie erfolgt durch Wärme $Q$ und Arbeit $W$ nach der Gleichung
+$$
+\Delta U = Q + W.
+$$
+Dabei: $Q$ — zugeführte Wärme (Einheit: $\mathrm{J}$), $W$ — vom System verrichtete/aufgenommene Arbeit (Einheit: $\mathrm{J}$).]{fg="green-shade-3"}
+:::
+
+---
+
+### Respiratorischer Quotient — Glucose
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Respiratorischer Quotient — Glucose",
+    level = 1,
+    base_points = 5,
+    max_base_points = 5 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Gib die stöchiometrische Verbrennungsreaktion von Glucose an und berechne den respiratorischen Quotienten $\mathrm{RQ}$.  
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Reaktion:
+$$\ce{C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O}$$
+Damit $n_{\ce{CO2}}=6$, $n_{\ce{O2}}=6$ und
+$$\mathrm{RQ}=\frac{n_{\ce{CO2}}}{n_{\ce{O2}}}=\frac{6}{6}=1.$$]{fg="green-shade-3"}
+:::
+
+---
+
+### Massenbezogene Enthalpie (Glucose)
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Massenbezogene Enthalpie — Glucose",
+    level = 1,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Zeige die Herleitung von $\Delta H_{m} = \Delta H_{n} / M$ und berechne die massenbezogene Metabolisierungsenergie von Glucose (Nutze $\Delta H_{n}=-2805\ \mathrm{kJ\,mol^{-1}}$, $M_{\text{Glucose}}=180.16\ \mathrm{g\,mol^{-1}}$). Ergebnis in $\mathrm{kJ\,g^{-1}}$.  
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Herleitung: $m=nM \Rightarrow n/m = 1/M \Rightarrow \Delta H_m = \Delta H_n / M$.
+
+Berechnung:
+$$\Delta H_{m} = \frac{-2805\ \mathrm{kJ\,mol^{-1}}}{180.16\ \mathrm{g\,mol^{-1}}} = -15.57\ \mathrm{kJ\,g^{-1}} \approx -15.6\ \mathrm{kJ\,g^{-1}}.$$]{fg="green-shade-3"}
+:::
+
+<!-- End of _level_1.qmd -->
+
+
+<!-- File: _level_2.qmd -->
+### Heizwert vs. Brennwert (Methan)
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Heizwert vs. Brennwert — Methan",
+    level = 2,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Gegeben: Verbrennungsenthalpie (Wasser als Dampf) für Methan:
+$$\ce{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(g)},\quad \Delta H_{c,n}^{\circ}=-802\ \mathrm{kJ\,mol^{-1}}.$$
+Die Kondensationsenthalpie ist $-\Delta H_{\text{vap},n}^{\circ}= -45\ \mathrm{kJ\,mol^{-1}}$ pro $\ce{H2O}$. Bestimme den Brennwert (Wasser flüssig) pro mol Methan.  
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Zwei Wassermoleküle kondensieren: Zusatzenergie $2\cdot45=90\ \mathrm{kJ\,mol^{-1}}$.
+$$\Delta H_{\text{Brennwert}} = -802\ \mathrm{kJ} - 2\cdot45\ \mathrm{kJ} = -892\ \mathrm{kJ\,mol^{-1}}.$$]{fg="green-shade-3"}
+:::
+
+---
+
+### Massenbezogene Enthalpie — Palmitinsäure
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Massenbezogene Enthalpie — Palmitinsäure",
+    level = 2,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Gegeben: Palmitinsäure $\ce{C16H32O2}$, $\Delta H_{c,n}^{\circ} = -10016\ \mathrm{kJ\,mol^{-1}}$ und molare Masse $M\approx256.43\ \mathrm{g\,mol^{-1}}$.
+Berechne $\Delta H_{m}$ in $\mathrm{kJ\,g^{-1}}$.  
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Rechnung:
+$$\Delta H_{m}=\frac{-10016\ \mathrm{kJ\,mol^{-1}}}{256.43\ \mathrm{g\,mol^{-1}}}=-39.05\ \mathrm{kJ\,g^{-1}}\approx -39.1\ \mathrm{kJ\,g^{-1}}.$$]{fg="green-shade-3"}
+:::
+
+---
+
+### Energieverlust durch Harnstoff — Alanin (Erweiterung)
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Energieverlust durch Harnstoff — Alanin",
+    level = 2,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Aus dem Text: thermische Verbrennung (Stöchiometrie mit 2 Mol Alanin) liefert
+$$\Delta H_{c,\mathrm{n},\mathrm{Alanin}}^{\circ} = -1621\ \mathrm{kJ}$$
+und die zur Ausscheidung nötige Umkehrreaktion (Harnstoff‑Bildung) hat $\Delta H_{\mathrm{Urin},n}^{\circ}=+632\ \mathrm{kJ}$ (bei passender Stöchiometrie).  
+a) Bestimme die molare Metabolisierungsenthalpie für 2 Mol Alanin (Addition der Enthalpien).  
+b) Gib die Metabolisierungsenthalpie pro Mol Alanin an (in $\mathrm{kJ\,mol^{-1}}$) und pro Gramm (molare Masse Alanin $M=89.09\ \mathrm{g\,mol^{-1}}$).  
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[a) Für 2 Mol Alanin:
+$$\Delta H_{\text{metab},2\,\text{mol}} = -1621\ \mathrm{kJ} + 632\ \mathrm{kJ} = -989\ \mathrm{kJ}.$$
+b) Pro Mol:
+$$\Delta H_{\text{metab, per mol}} = \frac{-989\ \mathrm{kJ}}{2} = -494.5\ \mathrm{kJ\,mol^{-1}}.$$
+Pro Gramm:
+$$\frac{-494.5\ \mathrm{kJ\,mol^{-1}}}{89.09\ \mathrm{g\,mol^{-1}}} = -5.55\ \mathrm{kJ\,g^{-1}}.$$]{fg="green-shade-3"}
+:::
+
+<!-- End of _level_2.qmd -->
+
+
+<!-- File: _level_3.qmd -->
+### Metabolisierungsenthalpie — Methionin (A‑Niveau)
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Metabolisierungsenthalpie — Methionin",
+    level = 3,
+    base_points = 10,
+    max_base_points = 10 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Im Text: thermische Verbrennung von Methionin (Stöchiometrie mit 2 Mol) liefert
+$$\Delta H_{c,\mathrm{n},\mathrm{Methionin}}^{\circ} = -3564\ \mathrm{kJ}.$$
+Die kombinierte Enthalpie für Harnstoff‑ und Sulfat‑Bildung (Urin+Sulfat) ist $\Delta H_{\text{Urin+Sulfat},n}^{\circ}=+327\ \mathrm{kJ}$ (passende Stöchiometrie).  
+a) Bestimme die molare Metabolisierungsenthalpie für die gegebene Stöchiometrie (Addition der Enthalpien).  
+b) Gib die Metabolisierungsenthalpie pro Mol Methionin an.  
+c) Berechne den prozentualen Energieverlust gegenüber der thermischen Verbrennung (in %).  
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[a) Für die gegebene Stöchiometrie (2 Mol):
+$$\Delta H_{\text{metab},2} = -3564\ \mathrm{kJ} + 327\ \mathrm{kJ} = -3237\ \mathrm{kJ}.$$
+b) Pro Mol Methionin:
+$$\frac{-3237\ \mathrm{kJ}}{2} = -1618.5\ \mathrm{kJ\,mol^{-1}}.$$
+c) Prozentualer Energieverlust:
+$$\text{Verlust}=\frac{327}{3564}\cdot100\%=9.17\%\approx9.2\%.$$]{fg="green-shade-3"}
+:::
+
+---
+
+### Expansionsarbeit und innere Energie — Methan (A‑Niveau)
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Expansionsarbeit und innere Energie — Methan",
+    level = 3,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Für die Reaktion
+$$\ce{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(g)}$$
+gilt im Standardfall $\Delta H_{c,n}^{\circ}=-802\ \mathrm{kJ\,mol^{-1}}$. Bestimme für diese Reaktion bei Standardbedingungen die Änderung der inneren Energie $\Delta U_{n}$ und die Expansionsarbeit $p\Delta V_{n}$. Begründe kurz.  
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Anzahl Gasmol vorher $n_i=1+2=3$, nachher $n_f=1+2=3$, also $\Delta n=0$. Daher ist $p\Delta V_{n}=0$ und
+$$\Delta U_{n}=\Delta H_{n} - p\Delta V_{n} = -802\ \mathrm{kJ\,mol^{-1}}.$$]{fg="green-shade-3"}
+:::
+
+---
+
+### Misch‑RQ (A‑Niveau)
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Misch‑RQ — Glucose + Palmitinsäure",
+    level = 3,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Berechne den respiratorischen Quotienten für die gleichzeitige vollständige Oxidation von je 1 Mol Glucose und 1 Mol Palmitinsäure (nutze die stöchiometrischen Reaktionen im Text). Zeige Rechnung.  
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Summen:
+$n_{\ce{CO2}} = 6 + 16 = 22$; $n_{\ce{O2}} = 6 + 48 = 54$.
+$$\mathrm{RQ}=\frac{22}{54}=0.4074\approx0.407.$$]{fg="green-shade-3"}
+:::
+
+<!-- End of _level_3.qmd -->
+~~~~quarto

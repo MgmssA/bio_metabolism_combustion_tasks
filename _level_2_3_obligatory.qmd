@@ -1,0 +1,110 @@
+## Stufe II (Pflicht für alle)
+
+Die folgenden Aufträge sind für alle Schüler*innen verpflichtend. Der Ablauf ist der folgende: in Deinem Bio Teamskanal findest Du eine Exceldatei mit einer Tabelle. Dort sind allen Personen aus diesem Kurs jeweils ein Zucker, eine Fettsäure und eine Aminosäure zugeordnet.
+
+Deine Aufgabe werden in den Abschnitten Stufe II und III beschrieben. Die Ergebnisse werden in der im Teamskanal vorhandenen Exceldatei von Dir eingetragen.
+
+Die notwendigen thermodynamischen Daten für die Angaben und Berechnungen findest Du einerseits in den Lerninhalten in der Kursarbeit dieses Kursteams und andererseits [hier](https://webbook.nist.gov/chemistry/).
+
+Sobald Du die Ergebnisse hast, werden sie ganz normal als Aufgabe hochgeladen und abgegeben. Du solltest bitte die Ergebnisse auch in der Exceldatei eintragen.
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Zuckersüss",
+    level = 2,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Zeige die Reaktionsgleichung für die thermische und metabolische Verbrennung Deines Zuckers. Gib die Standardenthalpie für beide Reaktionen an und berechne anschliessend den respiratorischen Quotienten für die Metabolisierung.     
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+
+::: {fg="green-shade-3"}
+
+Punkte gibt es für die korrekte Reaktionsgleichung. und dort für die korrekte Angabe von Sauerstoff\*, Wasser\*, Kohlenstoffdioxid\*. Für die beiden Standardenthalpien gibt es \*\* und respiratorischen Quotienten\*.
+
+:::
+
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Deftig",
+    level = 2,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Zeige die Reaktionsgleichung für die thermische und metabolische Verbrennung Deiner Fettsäure. Gib die Standardenthalpie für beide Reaktionen an und den respiratorischen Quotienten für die Metabolisierung.     
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+
+::: {fg="green-shade-3"}
+
+Punkte gibt es für die korrekte Reaktionsgleichung. und dort für die korrekte Angabe von Sauerstoff\*, Wasser\*, Kohlenstoffdioxid\*. Für die beiden Standardenthalpien gibt es \*\* und den respiratorischen Quotienten\*.
+
+:::
+
+:::
+
+## Stufe III (Pflicht für alle)
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Proteinreich",
+    level = 3,
+    base_points = 9,
+    max_base_points = 12 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Zeige die Reaktionsgleichung für die thermische und metabolische Verbrennung Deiner Aminosäure. Gib die Standardenthalpie für beide Reaktionen an und den respiratorischen Quotienten für die Metabolisierung. Bedenke, dass Du auf jeden Fall die Stickstoffatome in der Reaktionsgleichung berücksichtigen musst. Deren Ausscheidung erfolgt über den Harnstoff. Falls Du Schwefelatome in Deiner Aminosäure hast, musst Du zusätzlich die Ausscheidung von Schwefel in Form von Schwefelsäure berücksichtigen.    
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+
+::: {fg="green-shade-3"}
+
+Punkte gibt es für die korrekte Reaktionsgleichung. und dort für die korrekte Angabe von Sauerstoff\*, Wasser\*, Kohlenstoffdioxid\*, Stickstoff\*. Die Aufstellung der Harnstoffverbrennung gibt \*. Für die beiden Standardenthalpien gibt es \*\*\* und den respiratorischen Quotienten\*. Für Schwefel gibt es zusätzlich \*\*\* 
+
+:::
+
+:::

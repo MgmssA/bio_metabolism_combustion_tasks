@@ -1,0 +1,111 @@
+## Stufe I
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Feuer brenne!",
+    level = 1,
+    base_points = 5,
+    max_base_points = 5 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Beschreibe was die Verbrennung ist und wie sie funktioniert. Was passiert dabei mit den Elementen der Brennmasse? Gehe dabei auf die Rolle von Sauerstoff ein. Was für ein Reaktionstyp liegt vor? In welcher Form liegen die Produkte einer Verbrennung unter Standardbedingungen vor?     
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+
+::: {fg="green-shade-3"}
+
+Die Verbrennung ist
+
+- Ein chemischer Prozess, bei dem ein Brennstoff mit Sauerstoff reagiert\*
+- Dabei werden Energie, Wärme und oft auch Licht freigesetzt\*
+- Es ist eine exotherme Reaktion, was bedeutet, dass sie Energie abgibt\*
+- Dabei werden viele Elemente des Lebens oxidiert\*
+- Die Produkte der Verbrennung sind in der Regel gasförmig\*
+
+:::
+
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Bedeutung der thermischen Verbrennung",
+    level = 1,
+    base_points = 4,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Was ist die Bedeutung der Verbrennung für den Menschen? Nenne und beschreibe kurz die wichtigsten Punkte.
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+
+::: {fg="green-shade-3"}
+
+Die Bedeutung der Verbrennung für den Menschen ist:
+
+- Nahrungszubereitung\*
+- Licht und Schutz vor Kälte und Wildtieren\*\*
+- Wärme- und Energieerzeugung\*
+- Grundlage für die Entwicklung von Technologie und Zivilisation\*\*
+
+:::
+
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Elemente des Lebens",
+    level = 1,
+    base_points = 6,
+    max_base_points = 12 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+```
+
+### `{r} task$task`
+
+Was bedeutet CHNOPS? Wie schätzt Du die Häufigkeit von einzelnen Elementen in der Trockenbiomasse von Organismen ein?
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+
+::: {fg="green-shade-3"}
+
+Die Abkürzung CHNOPS steht für die sechs häufigsten Elemente in lebenden Organismen: Kohlenstoff (C)\*, Wasserstoff (H)\*, Stickstoff (N)\*, Sauerstoff (O)\*, Phosphor (P)\* und Schwefel (S)\*.
+
+:::
+
+:::

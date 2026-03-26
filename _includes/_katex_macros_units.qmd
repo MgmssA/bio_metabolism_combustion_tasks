@@ -1,0 +1,52 @@
+::: {.content-hidden unless-meta="has-math"}
+
+::: {.hidden}
+
+<!-- Groundwork -->
+$$
+\gdef\sub#1{_{\mathrm{#1}}}
+\gdef\unit#1{\mathrm{#1}}
+$$
+<!-- Physical units -->
+$$
+\gdef\Celsius{\unit{°C}}
+\gdef\Gram{\unit{g}}
+\gdef\Joule{\unit{J}}
+\gdef\Kelvin{\unit{K}}
+\gdef\Kilogram{\unit{kg}}
+\gdef\Liter{\unit{L}}
+\gdef\Milliliter{\unit{mL}}
+\gdef\Meter{\unit{m}}
+\gdef\Mole{\unit{mol}}
+\gdef\Newton{\unit{N}}
+\gdef\Pascal{\unit{Pa}}
+$$
+<!-- Prefixed units -->
+$$
+\gdef\KiloJoule{\unit{k}\Joule}
+$$
+<!-- Exponentiated units -->
+$$
+\gdef\SquareMeter{\Meter^2}
+\gdef\CubicMeter{\Meter^3}
+$$
+<!-- Combined physical units -->
+$$
+\gdef\CubicMeterPerMole{\frac{\CubicMeter}{\Mole}}
+\gdef\NewtonPerKilogram{\frac{\Newton}{\Kilogram}}
+\gdef\JoulePerMole{\frac{\Joule}{\Mole}}
+\gdef\JoulePerKilogram{\frac{\Joule}{\Kilogram}}
+\gdef\JoulePerKelvin{\frac{\Joule}{\Kelvin}}
+\gdef\JoulePerKilogramPerKelvin{\frac{\Joule}{\Kilogram\,\Kelvin}}
+\gdef\JoulePerMolePerKelvin{\frac{\Joule}{\Mole\,\Kelvin}}
+\gdef\KiloJoulePerKilogram{\frac{\KiloJoule}{\Kilogram}}
+\gdef\KiloJoulePerMole{\frac{\KiloJoule}{\Mole}}
+\gdef\KiloJoulePerGram{\frac{\KiloJoule}{\Gram}}
+\gdef\KiloJoulePerKelvin{\frac{\KiloJoule}{\Kelvin}}
+\gdef\KiloJoulePerKilogramPerKelvin{\frac{\KiloJoule}{\Kilogram\,\Kelvin}}
+\gdef\KiloJoulePerMolePerKelvin{\frac{\KiloJoule}{\Mole\,\Kelvin}}
+$$
+
+:::
+
+:::

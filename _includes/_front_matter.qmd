@@ -1,0 +1,23 @@
+---
+title: |
+    <p>![](style/mgmss_symbol_color.png){width=40px}</p>
+    Metabolismus - Verbrennung
+subtitle: 'Nutzung der chemischen Energie<br><small>Aufgaben</small>'
+date: 2025-09-21 
+date-modified: 2026-03-24
+author: Călin Aurel Drăgan
+abstract: 'Das Leben braucht offensichtlich Energie: das bloße Dasein verlangt nach Energie, selbst wenn man nichts tut. Aber woher bekommen wir die Energie? Was müssen wir tun, damit diese Energie zugänglich wird? In diesem Dokument lernst Du die Grundlagen des Metabolismus kennen. Es ist der Motor, der uns am Leben hält und alles andere möglich macht, was das Leben ausmacht.'
+# bibliography: references.bib
+format: 
+    biodoc-html:
+        include-in-header: _includes/_in_header.html
+        # include-after-body: _includes/_after_body.html
+        embed-resources: false
+        self-contained-math: false
+has-fontawesome: false
+has-math: true
+has-rating: true
+show-rating: false
+filters:
+  - highlight-text
+---
