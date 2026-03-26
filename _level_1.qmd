@@ -96,7 +96,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Was bedeutet CHNOPS? Wie schätzt Du die Häufigkeit von einzelnen Elementen in der Trockenbiomasse von Organismen ein?
+Was bedeutet CHNOPS? Wie schätzt Du die Häufigkeit von einzelnen Elementen in der *Trockenbiomasse* von Organismen ein?
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
