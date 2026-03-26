@@ -1,8 +1,8 @@
 ## Stufe II (Pflicht für alle)
 
-Die folgenden Aufträge der Stufe II und III sind Pflicht. Der Ablauf ist der folgende: im Kursteam gibt es drei Exceldateien. Dort werden allen Personen aus diesem Kurs jeweils ein Zucker, eine Fettsäure und eine Aminosäure zugeordnet.
+Die folgenden Aufträge der Stufe II und III sind Pflicht. Der Ablauf ist der folgende: im Kursteam gibt es eine Exceldatei mit drei Tabs. Dort werden allen Personen aus diesem Kurs jeweils ein Zucker, eine Fettsäure und eine Aminosäure zugeordnet.
 
-Deine Aufgabe findest Du in den Abschnitten Stufe II und III beschrieben. Die Ergebnisse werden ganz normal an diese Aufgabe angehangen. **Bevor Du die Aufgabe als erledigt markierst**, werden einige Berechnungsergebnisse in der entsprechenden Exceldatei von Dir selbst eingetragen. Dabei achtest Du, dass Du die Ergebnisse in der Zeile einträgst, die Deinem Namen zugeordnet ist. **Lösche nichts!**; der Zugriff wird archiviert und ist nachvollziehbar. 
+Deine Aufträge findest Du in den Abschnitten Stufe II und III dieses Dokuments beschrieben. Die Ergebnisse werden ganz normal an diese Aufgabe angehangen. **Bevor Du die Aufgabe als erledigt markierst**, werden die Berechnungsergebnisse in die Exceldatei von Dir selbst eingetragen. Dabei achtest Du, dass Du die Ergebnisse in der Zeile einträgst, die Deinem Namen zugeordnet ist. **Lösche nichts!**; der Zugriff wird archiviert und ist nachvollziehbar. 
 
 Die notwendigen thermodynamischen Daten für die Angaben und Berechnungen findest Du einerseits in den Lerninhalten des Moduls Metabolismus und andererseits [hier](https://webbook.nist.gov/chemistry/). Hierbei suchst Du mittels des englischen Namens Deiner Substanz und verwendest anschliessend **Condensed phase thermochemistry data**. Dort kannst Du die neuesten Daten für die Standardenthalpie der Verbrennung $\Delta H\sub{c}^{\circ}$ ausfindig machen.  
 
