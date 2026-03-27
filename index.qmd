@@ -5,8 +5,8 @@
 {{< include _includes/_r_rating_init.qmd >}}
 
 {{< include _level_1.qmd >}}
-{{< include _level_2_3_obligatory.qmd >}}
-<!-- {{< include _level_3.qmd >}} -->
+{{< include _level_2.qmd >}}
+{{< include _level_3.qmd >}}
 
 {{< include _includes/_r_rating.qmd >}}
 

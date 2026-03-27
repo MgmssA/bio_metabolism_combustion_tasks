@@ -71,38 +71,3 @@ Punkte gibt es für die korrekte Reaktionsgleichung. und dort für die korrekte 
 :::
 
 :::
-
-## Stufe III (Pflicht für alle)
-
-```{r}
-#| output: false
-
-task <- tibble::tibble(
-    task = "Proteinreich",
-    level = 3,
-    base_points = 9,
-    max_base_points = 12 
-) |>
-    dplyr::mutate(
-        level_points = base_points * level,
-        max_level_points = max_base_points * level
-    )
-
-tasks <- tasks |> tibble::add_row(task)
-```
-
-### `{r} task$task`
-
-Zeige die Reaktionsgleichung für die thermische und metabolische Verbrennung Deiner Aminosäure. Gib die Standardenthalpie für beide Reaktionen an und den respiratorischen Quotienten für die Metabolisierung. Bedenke, dass Du auf jeden Fall die Stickstoffatome in der Reaktionsgleichung berücksichtigen musst. Deren Ausscheidung erfolgt über den Harnstoff. Falls Du Schwefelatome in Deiner Aminosäure hast, musst Du zusätzlich die Ausscheidung von Schwefel in Form von Schwefelsäure/Sulfat berücksichtigen.    
-
-[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
-
-::: {.content-hidden unless-meta="show-rating"}
-
-::: {fg="green-shade-3"}
-
-Punkte gibt es für die korrekte Reaktionsgleichung. und dort für die korrekte Angabe von Sauerstoff\*, Wasser\*, Kohlenstoffdioxid\*, Stickstoff\*. Die Aufstellung der Harnstoffverbrennung gibt \*. Für die beiden Standardenthalpien gibt es \*\*\* und den respiratorischen Quotienten\*. Für Schwefel gibt es zusätzlich \*\*\* 
-
-:::
-
-:::
