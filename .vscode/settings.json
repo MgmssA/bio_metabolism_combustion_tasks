@@ -1,0 +1,5 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/gumbo/.positron/extensions/continue.continue-0.0.412-linux-x64"
+    ]
+}

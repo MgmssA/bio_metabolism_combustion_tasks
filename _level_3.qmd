@@ -19,7 +19,35 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Zeige die Reaktionsgleichung für die thermische und metabolische Verbrennung Deiner Aminosäure. Gib die Standardenthalpie für beide Reaktionen an und den respiratorischen Quotienten für die Metabolisierung. Bedenke, dass Du auf jeden Fall die Stickstoffatome in der Reaktionsgleichung berücksichtigen musst. Deren Ausscheidung erfolgt über den Harnstoff. Falls Du Schwefelatome in Deiner Aminosäure hast, musst Du zusätzlich die Ausscheidung von Schwefel in Form von Schwefelsäure/Sulfat berücksichtigen.    
+Zeige die Reaktionsgleichung für die thermische und metabolische Verbrennung Deiner Aminosäure. Gib die Standardenthalpie für beide Reaktionen an und den respiratorischen Quotienten für die Metabolisierung. Wer eine schwefelhaltige Aminosäure hat bekommt die vierfache Punktzahl, da zusätzlich die Behandlung von Schwefel in der Reaktionsgleichung berücksichtigt werden muss. Wer eine schwefelhaltige Aminosäure oder ähnliche Substanz möchte, sollte sich bei Călin melden.  
+
+#### Vorgehen bei Aminosäuren {.unnumbered}
+
+Bedenke, dass Du auf jeden Fall die Stickstoffatome in der Reaktionsgleichung berücksichtigen musst. Deren Ausscheidung erfolgt über den Harnstoff. Hier ist die Vorgehensweise folgende:
+
+#. Stelle die Reaktionsgleichung für die thermische Verbrennung auf
+#. Beziehe die Verbrennungsenthalpie von den gegebenen Quellen
+#. Stelle die Reaktionsgleichung für die metabolische Verbrennung auf unter Berücksichtigung der Harnstoffbildung auf
+#. Berechne die Standardenthalpie für die metabolische Verbrennung
+#. Berechne den respiratorischen Quotienten für die Metabolisierung
+#. Lade Deine Ergebnisse in der Aufgabe hoch
+#. Trage die Werte in der Exceldatei ein
+#. Markiere die Aufgabe als erledigt
+
+#### Vorgehen bei schwefelhaltigen Aminosäuren {.unnumbered}
+
+Falls Du Schwefelatome in Deiner Aminosäure hast, musst Du zusätzlich die Ausscheidung von Schwefel in Form von Schwefelsäure/Sulfat berücksichtigen. Hier empfehle ich folgende Vorgehensweise:
+
+#. Stelle die Reaktionsgleichung für die thermische Verbrennung auf
+#. Gewinne aus dieser Reaktionsgleichung die kalorimetrische Verbrennungsgleichung, indem Du die Bildung der Schwefelsäure berücksichtigst.
+#. Beziehe die kalorimetrische Verbrennungsenthalpie von den gegebenen Quellen
+#. Berechne die thermische Verbrennungsenthalpie unter Berücksichtigung der Bildung von Schwefelsäure
+#. Stelle die Reaktionsgleichung für die metabolische Verbrennung auf unter Berücksichtigung der Harnstoffbildung und der Schwefelsäurebildung auf
+#. Berechne die Standardenthalpie für die metabolische Verbrennung
+#. Berechne den respiratorischen Quotienten für die Metabolisierung
+#. Lade Deine Ergebnisse in der Aufgabe hoch
+#. Trage die Werte in der Exceldatei ein
+#. Markiere die Aufgabe als erledigt    
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
