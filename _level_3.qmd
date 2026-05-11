@@ -49,13 +49,35 @@ Falls Du Schwefelatome in Deiner Aminosäure hast, musst Du zusätzlich die Auss
 #. Trage die Werte in der Exceldatei ein
 #. Markiere die Aufgabe als erledigt    
 
-[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+::: {.fg="purple"}
+
+Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte, jeweils mal drei genommen, werden für 
+
+- Die korrekte Reaktionsgleichung der thermischen Verbrennung\*,
+- Die beiden Standardenthalpien pro Mol\* und pro Gramm\* für die thermische Verbrennung,
+- Die korrekt angepasste Reaktionsgleichung der thermischen Verbrennung von Harnstoff\*; heisst so viele Stickstoffatome in der Reaktionsgleichung wie in der thermischen Verbrennung der Aminosäure vorhanden sind,
+- Die zusammengeführte Reaktionsgleichung der metabolischen Verbrennung unter Berücksichtigung der Harnstoffbildung vor dem Kürzen\*,
+- Die sich ergebende Reaktionsgleichung der metabolischen Verbrennung nach dem Kürzen\*,
+- Die beiden Standardenthalpien pro Mol\* und pro Gramm\* für die metabolische Verbrennung,
+- Den respiratorischen Quotienten\*.
+- Falls notwendig, das Handling des Schwefels wie in den Lerninhalten gezeigt; mit den Bonuspunkten \*\*\*.
+
+:::
 
 ::: {.content-hidden unless-meta="show-rating"}
 
 ::: {fg="green-shade-3"}
 
-Punkte gibt es für die korrekte Reaktionsgleichung. und dort für die korrekte Angabe von Sauerstoff\*, Wasser\*, Kohlenstoffdioxid\*, Stickstoff\*. Die Aufstellung der Harnstoffverbrennung gibt \*. Für die beiden Standardenthalpien gibt es \*\*\* und den respiratorischen Quotienten\*. Für Schwefel gibt es zusätzlich \*\*\* 
+Punkte, jeweils mal drei genommen, werden für 
+
+- Die korrekte Reaktionsgleichung der thermischen Verbrennung\*,
+- Die beiden Standardenthalpien pro Mol\* und pro Gramm\* für die thermische Verbrennung,
+- Die korrekt angepasste Reaktionsgleichung der thermischen Verbrennung von Harnstoff\*; heisst so viele Stickstoffatome in der Reaktionsgleichung wie in der thermischen Verbrennung der Aminosäure vorhanden sind,
+- Die zusammengeführte Reaktionsgleichung der metabolischen Verbrennung unter Berücksichtigung der Harnstoffbildung vor dem Kürzen\*,
+- Die sich ergebende Reaktionsgleichung der metabolischen Verbrennung nach dem Kürzen\*,
+- Die beiden Standardenthalpien pro Mol\* und pro Gramm\* für die metabolische Verbrennung,
+- Den respiratorischen Quotienten\*.
+- Falls notwendig, das Handling des Schwefels wie in den Lerninhalten gezeigt; mit den Bonuspunkten \*\*\*. 
 
 :::
 
